@@ -1,0 +1,25 @@
+<nav>
+    <div class="left">
+         <a href='/'><%=image_tag("fintros.png")%></a>
+    </div>
+    <ul class="right">
+        <a href='#' class='nav-link'><li>Candidates</li></a>
+        <a href='#' class='nav-link'><li>Employers</li></a>
+        <a href='#' class='nav-link'><li>Faq</li></a>
+        <a href='#' class='nav-link'><li>Log In</li></a>
+        <%= link_to (url_for({:controller => "articles", :action => "new"})), :remote => true, :class=>"new-post-button" do %>
+            <li>New Post</li>
+        <% end %>
+    </ul>
+    <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+</nav>
+
+<div class="new-post-background">
+    <div class="new-post-modal">
+        
+    </div>
+</div>

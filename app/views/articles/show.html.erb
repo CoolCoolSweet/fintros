@@ -1,0 +1,20 @@
+<%= render "nav" %>
+<main class='main-show'>
+    <div class="image-container">
+        <%=image_tag("article.png")%>
+    </div>
+    <div class="content-container">
+        <h1 class="title"><%= @article.title %></h1>
+        <h1 class="author">By <%= @article.author %></h1>
+        <div class="controls">
+        <%= link_to 'Edit', edit_article_path(@article), :class => 'edit-button' %>
+        <span> | </span>
+        <%= link_to 'Delete', article_path(@article),
+            method: :delete,
+            data: {confirm: 'Are you sure?'},
+            :class => 'delete-button' %>
+        </div>
+        
+        <p class="body"><%= @article.body %></p>
+    </div>
+</main>

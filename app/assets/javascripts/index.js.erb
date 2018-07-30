@@ -1,0 +1,25 @@
+$(function() {
+
+    $(document).on('click', '.new-post-background', function(e) {
+        $('body > main').css("height", "auto");
+        $('body > main').css("overflow", "visible");
+        $('.new-post-background').css('display', 'none');
+
+    });
+
+    $(document).on('click', '.new-post-modal', function(e) {
+        e.stopPropagation();
+    });   
+
+    $(document).on("ajax:success", '#new-post-form', function(e) {
+        $('body > main').css("height", "auto");
+        $('body > main').css("overflow", "visible");
+        $('.new-post-background').css('display', 'none');
+    });
+
+    $(document).on('click', '.hamburger', function(e) {
+        e.stopPropagation();
+        $('.right').addClass('menu-fullscreen');
+        $('body > main').css("display", "none");
+    });  
+});

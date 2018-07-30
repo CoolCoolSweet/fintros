@@ -1,0 +1,15 @@
+<%= render "nav" %>
+<main class='main-index'>
+    <div class='articles'>
+        <% @article.each do |article| %>
+        <article id='<%=article.id %>'>
+            <a href="/articles/<%=article.id %>"><%=image_tag("article.png")%></a>
+            <div class='content-container'>
+                <h1 class="title"><%= article.title %></h1>
+                <p class='body'><%= article.body %></p>
+            </div>    
+        </article>
+        <% end %>
+    </div>
+</main>
+
