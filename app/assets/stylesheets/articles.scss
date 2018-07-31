@@ -125,6 +125,10 @@ nav {
         flex-grow: 1;
     }
 
+    .new-post-form  >  div {
+        margin-top: 10px;
+    }
+
     .new-post-modal {
         display: flex;
         justify-content: space-between;
@@ -184,7 +188,8 @@ nav {
     }
 
     h1 {
-        margin-bottom: 10px;
+        margin-bottom: 15px;
+        font-size: 2.4rem;
     }
 }
 
