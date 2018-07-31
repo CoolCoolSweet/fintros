@@ -203,6 +203,7 @@ nav {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        max-width: 900px;
     }
 
     article {
@@ -320,6 +321,7 @@ nav {
 
 .main-edit {
     width: 50%;
+    max-width: 900px;
     min-width: 260px;
     margin: 20px auto;
     font-family: 'Poppins', sans-serif;
