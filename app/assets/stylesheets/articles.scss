@@ -1,26 +1,11 @@
 // Place all the styles related to the blog controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-@font-face {
-  font-family: 'GT';
-  src:url('/assets/GT-Walsheim-Regular.ttf');
-}
-
-@font-face {
-  font-family: 'GT-M';
-  src:url('/assets/GT-Walsheim-Medium.ttf');
-}
-
-@font-face {
-  font-family: 'GT-L';
-  src:url('/assets/GT-Walsheim-Light.ttf');
-}
-
 
 @import 'setup';
 
 html {
-    font-family: 'GT';  
+    font-family: 'Poppins', sans-serif; 
     font-size: 62.5%;
     position: relative;
     min-width: 300px;
@@ -80,7 +65,7 @@ nav {
     .new-post-button {
         padding: 11px;
         text-transform: uppercase;
-        font-family: 'Amaze';
+        font-family: 'Poppins', sans-serif;
         border: 2px solid #1a85ff;
         margin-left: 13px;  
     }
@@ -88,7 +73,7 @@ nav {
     li {
         position: relative;
         white-space: nowrap;
-        font-family: 'GT-M'; 
+        font-family: 'Poppins', sans-serif; 
     }
 
     .nav-link:hover li::after {
@@ -145,7 +130,7 @@ nav {
         justify-content: space-between;
         flex-direction: column;
         padding: 20px;
-        font-family: 'GT-M';
+        font-family: 'Poppins', sans-serif;
         font-weight: bold;
         width: 50%;
         min-height: 50%;
@@ -184,7 +169,7 @@ nav {
         height: 30px;
         color: white;
         cursor: pointer;
-        font-family: 'GT';
+        font-family: 'Poppins', sans-serif;
         line-height: 1.5;
     }
 
@@ -241,13 +226,14 @@ nav {
 
         .title {
             font-size: 3.2rem;
-            font-family: 'GT-M';
+            font-family: 'Poppins', sans-serif;
             font-weight: bold;
         }
 
         .body {
             font-size: 1.6rem;
-            font-family: 'GT-L';
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
         }
     }
 
@@ -294,7 +280,7 @@ nav {
     }
 
     .controls {
-        font-family: 'GT-M';
+        font-family: 'Poppins', sans-serif;
         align-self: flex-start;
         margin-bottom: 15px;  
         font-size: 1.44rem; 
@@ -314,12 +300,13 @@ nav {
         font-size: 1.44rem;
         text-align: center;
         text-transform: uppercase;
-        font-family: 'GT-L';
+        font-family: 'Poppins', sans-serif;
         margin-bottom: 15px;
     }
 
     .body {
-        font-family: 'GT-L';
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
         text-align: left;
         font-size: 1.92rem;
         white-space: pre-wrap;
@@ -330,7 +317,7 @@ nav {
     width: 50%;
     min-width: 260px;
     margin: 20px auto;
-    font-family: 'GT-M';
+    font-family: 'Poppins', sans-serif;
     font-size: 1.6rem;
     font-weight: bold;
 
@@ -354,7 +341,7 @@ nav {
         height: 30px;
         color: white;
         cursor: pointer;
-        font-family: 'GT';
+        font-family: 'Poppins', sans-serif;
         line-height: 1.5;
     }
 
