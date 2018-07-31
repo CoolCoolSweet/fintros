@@ -36,6 +36,7 @@ a {
 }
 
 nav {
+    font-weight: bold;
     position: fixed;
     top: 0;
     height: 55px;
@@ -145,6 +146,7 @@ nav {
         flex-direction: column;
         padding: 20px;
         font-family: 'GT-M';
+        font-weight: bold;
         width: 50%;
         min-height: 50%;
         min-width: 280px;
@@ -236,6 +238,7 @@ nav {
         .title {
             font-size: 3.2rem;
             font-family: 'GT-M';
+            font-weight: bold;
         }
 
         .body {
@@ -291,6 +294,7 @@ nav {
         align-self: flex-start;
         margin-bottom: 15px;  
         font-size: 1.44rem; 
+        font-weight: bold;
     }
 
     .title {
@@ -324,6 +328,7 @@ nav {
     margin: 20px auto;
     font-family: 'GT-M';
     font-size: 1.6rem;
+    font-weight: bold;
 
     .title-label, .author-label, .body-label, .title-input, .author-input {
         display: block;
